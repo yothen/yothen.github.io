@@ -13,9 +13,14 @@
 <button
 class="g-recaptcha"
 data-sitekey="6LdAExkUAAAAAFHXT3VxFY3T8c_D2aoFCBo-QXTh"
-data-callback="YourOnSubmitFn">
+data-callback="onSuccess">
 Submit
 </button>
 </form>
 </body>
+<script type="text/javascript">
+	var onSuccess = function(response) {
+		alert(response);
+	};
+</script>>
 </html>
